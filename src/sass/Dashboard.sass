@@ -1,0 +1,110 @@
+@import '../sass/_vars'
+
+.dashboard
+    background-color: $black-1
+    min-height: 100vh
+
+.cards-wrap
+    margin-top: 1.5rem
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 1rem
+    .card
+        background-color: $black-2
+        padding: 1.75rem 1.5625rem
+        color: #fff
+        .card-row
+            display: flex
+            margin-bottom: 0.5rem
+            h3
+                font-size: 1.5rem
+                font-weight: 500
+            .indicator
+                margin-left: 4px
+                color: $green
+                font-size: 0.875rem
+                font-weight: 500
+            .card-icon
+                width: 40px
+                height: 40px
+                background: rgba(0, 210, 91, 0.11)
+                border-radius: 7px
+                color: $green-tint
+                display: flex
+                justify-content: center
+                align-items: center
+                color: $green
+                margin-left: auto
+
+        .card-title
+            font-size: 0.9375rem
+            color: $white-muted
+
+.additional-info
+    margin-top: 1.5rem
+    display: grid
+    grid-template-columns: 4fr 8fr
+    gap: 1.5rem
+    .card-left
+        background-color: $black-2
+        padding: 1.5rem
+        canvas
+            margin: 1.5rem 0
+        .transfer
+            background: #12151e
+            padding: 1.5rem
+            display: flex
+            align-items: center
+            div
+                flex: 1
+                .transfer-title
+                    margin-bottom: 0.25rem
+                    font-weight: 500
+                .transfer-date
+                    color: $white-muted
+            .transfer-amount
+                font-weight: 500
+
+    .card-right
+        background-color: $black-2
+        padding: 1.5rem
+        .row
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 1rem
+            .data-status
+                color: $white-muted
+        .data
+            display: flex
+            align-items: center
+            border-bottom: 1px solid #2c2e33
+            padding: 1rem 0
+            .data-icon
+                width: 40px
+                height: 40px
+                background-color: #0090E7
+                font-weight: 500
+                display: flex
+                justify-content: center
+                align-items: center
+            .data-text
+                flex: 1
+                margin-left: 15px
+                .data-title
+                    font-weight: 500
+                    font-size: 0.9375rem
+                    margin-bottom: 8px
+                .data-subtitle
+                    color: $white-muted
+            .data-meta
+                text-align: right
+                .meta-time
+                    margin-bottom: 8px
+                    color: $white-muted
+                .meta-info
+                    color: $white-muted
+
+    .card-title
+        font-size: 1.125rem
+        font-weight: 500

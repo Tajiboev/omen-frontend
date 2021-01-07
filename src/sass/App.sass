@@ -1,0 +1,63 @@
+@import "_vars"
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: $default-font, sans-serif
+    font-size: 14px
+    min-width: 320px
+    overflow-x: hidden
+    text-rendering: optimizeLegibility
+
+li
+    list-style: none
+
+a
+    text-decoration: none
+
+input, button, select
+    font-family: $default-font, sans-serif
+    font-size: 14px
+    font-weight: normal
+    outline-color: $black-1
+
+input, select
+    line-height: 1.4
+    color: $black-1
+    padding: 8px
+
+button
+    padding: 8px
+    border: 1px solid #d9d9d9
+    background-color: #fff
+    color: $black-1
+    outline: none
+    cursor: pointer
+    box-shadow: 0 2px 0 rgba(0,0,0,.015)
+    border-radius: 2px
+    &:hover, &:focus
+        box-shadow: none
+
+.disabled
+    cursor: not-allowed
+
+.error
+    padding: 1rem 1.5rem
+    background-color: $red-tint
+    border: 1px solid $red
+    color: $red
+    margin: 0 auto 1rem auto
+    max-width: 500px
+    text-align: center
+
+.success
+    padding: 1rem 1.5rem
+    background-color: $green-tint
+    border: 1px solid $green
+    color: $green
+    margin: 0 auto 1rem auto
+    max-width: 500px
+    text-align: center

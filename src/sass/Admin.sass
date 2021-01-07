@@ -1,0 +1,100 @@
+@import '../sass/_vars'
+
+.admin
+    background-color: $black-1
+    min-height: 100vh
+    .page-content
+        width: -webkit-fill-available
+
+.card-table
+    padding: 1.75rem 1.5625rem
+    border-radius: 0.25rem
+    background-color: #191c24
+    background-clip: border-box
+    border: 1px solid rgba(0, 0, 0, 0.125)
+    .table-title
+        color: #ffffff
+        margin-bottom: 1.125rem
+        text-transform: capitalize
+        font-weight: 500
+        font-size: 1.125rem
+
+.load
+    background-color: transparent
+    border: 1px solid $white-muted
+    color: $white-muted
+    margin: 1rem 0
+
+.nodata
+    margin: 1rem 0
+    color: $white-muted
+
+.table-wrapper
+    overflow-x: auto
+
+.table
+    color: #6c7293
+    border-spacing: 0
+    width: 100%
+    text-align: center
+
+th
+    border-top: 0
+    vertical-align: bottom
+    border-bottom-width: 1px
+    font-weight: 500
+    color: #6c7293
+    font-size: 0.875rem
+    line-height: 1
+    padding: 0.9375rem
+    border-bottom: 1px solid #2c2e33
+    white-space: nowrap
+
+td
+    vertical-align: middle
+    font-size: 0.875rem
+    line-height: 1
+    padding: 0.9375rem
+    white-space: nowrap
+    border-bottom: 1px solid #2c2e33
+
+.reject
+    border-radius: 0.25rem
+    font-size: 0.75rem
+    font-weight: initial
+    line-height: 1
+    padding: 0.5rem 0.7rem
+    font-weight: 500
+    background-color: $red-tint
+    border: 1px solid $red
+    color: $red
+    font-weight: 300
+    margin: 0 4px
+
+.approve
+    border-radius: 0.25rem
+    font-size: 0.75rem
+    font-weight: initial
+    line-height: 1
+    padding: 0.5rem 0.7rem
+    font-weight: 500
+    background-color: $green-tint
+    border: 1px solid $green
+    color: $green
+    font-weight: 300
+    margin: 0 4px
+
+.control
+    display: flex
+    justify-content: space-between
+    margin-bottom: 1rem
+    .panel-control
+        button
+            border: 1px solid #2c2e33
+            padding: .5rem 1.5rem
+            background-color: transparent
+            color: $white-muted
+            margin-left: 1rem
+        .active
+            border: 1px solid #fff
+            color: #fff

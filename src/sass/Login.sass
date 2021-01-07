@@ -1,0 +1,72 @@
+@import "_vars"
+
+.login
+    background-color: $black-1
+    height: 100vh
+    width: 100vw
+    .content
+        padding-top: 70px
+        display: block
+        min-height: 100vh
+        min-width: 100vw
+        .sidenav
+            position: fixed
+
+.form-wrapper
+    background-color: $black-2
+    text-align: center
+    padding: 2rem 2rem 3rem 2rem
+    max-width: 500px
+    margin: 0 auto
+    h1
+        margin-bottom: 1rem
+        color: #fff
+    p
+        margin-bottom: 2rem
+        color: $white-muted
+        a
+            color: $white-muted
+            border-bottom: 1px solid $white-muted
+            &:hover
+                color: #fff
+
+.form
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    input
+        border: 1px solid #2c2e33
+        font-weight: normal
+        font-size: 0.875rem
+        padding: 0.875rem
+        background-color: #2A3038
+        border-radius: 2px
+        color: #ffffff
+        margin-bottom: 1.5rem
+        outline: none
+        &::placeholder
+            color: $white-muted
+
+    .check-group
+        margin-bottom: 1.5rem
+        text-align: left
+        color: $white-muted
+        display: flex
+        align-items: center
+        input
+            margin: 0 0.5rem 0 0
+    button
+        background-color: $red
+        border: none
+        color: #fff
+        font-size: 16px
+        font-weight: 500
+        padding: 1rem 0
+
+.logo
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 1rem 0 2rem 0
+    img
+        max-width: 150px

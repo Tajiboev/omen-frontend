@@ -1,0 +1,98 @@
+@import '../sass/_vars'
+
+.sidenav
+    width: 250px
+    min-height: 100vh
+    background-color: $black-2
+    padding: 1rem
+
+.profile-info
+    display: flex
+    align-items: center
+    margin-bottom: 1rem
+    img
+        width: 40px
+        border-radius: 50%
+    .info
+        flex: 1
+        padding: 0 10px
+        .name
+            font-size: 16px
+            margin-bottom: 4px
+            color: #fff
+        .status
+            font-size: 12px
+            color: $white-muted
+    .extra-info
+        background-color: transparent
+        color: $white-muted
+        border: none
+        width: 35px
+        height: 35px
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 14px
+            height: 14px
+
+.title
+    padding: 1rem 0
+    font-weight: 500
+    font-size: 14px
+    color: $white-muted
+
+.side-ul
+    margin-left: -1rem
+    .side-li
+        color: $white-muted
+        font-size: 0.9375remr
+        padding: 0.8rem 0.5rem 0.8rem 1.5rem
+        display: flex
+        align-items: center
+        &:hover
+            color: #fff
+            background-color: $black-1
+            border-radius: 0 50px 50px 0
+            border-left: 3px solid $red
+            .toAdmin
+                color: #fff
+        a
+            color: $white-muted
+
+.nav-icon
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    background-color: rgba(108, 114, 147, 0.2)
+    margin-right: 0.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #fff
+
+.custom-class
+    svg.custom-class
+        path
+            fill: blue
+
+.changer
+    display: flex
+    flex-direction: column
+    background: $black-1
+    position: absolute
+    top: 120px
+    z-index: 300
+    background-color: #191c24
+    background-clip: padding-box
+    border: 1px solid #2c2e33
+    border-radius: 0.25rem
+    a
+        display: flex
+        align-items: center
+        color: $white-muted
+        padding: 11px 13px
+        border-bottom: 1px solid #2c2e33
+        font-size: 14px
+        &:hover
+            color: #fff

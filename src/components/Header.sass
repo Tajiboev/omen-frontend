@@ -1,0 +1,78 @@
+@import '../sass/_vars'
+
+header
+    width: 100%
+    background-color: $black-2
+    color: #000
+    position: fixed
+    z-index: 500
+
+.header
+    display: flex
+    justify-content: center
+    align-items: center
+    ul
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        right: 32px
+        top: 20px
+.header-brand
+    display: flex
+    width: 250px
+    height: 70px
+    justify-content: center
+    align-items: center
+    a
+        font-weight: 600
+        color: #fff
+        letter-spacing: 5px
+        text-align: center
+        font-size: 18px
+
+.header-item
+    margin-left: 1rem
+    white-space: nowrap
+    .icon-btn
+        width: 35px
+        height: 35px
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: transparent
+        color: #fff
+        border: none
+        img
+            width: 16px
+            height: 16px
+
+.logout
+    margin-left: 1rem
+    position: relative
+    &::before
+        content: ''
+        width: 1px
+        height: 20px
+        background-color: $white-muted
+        position: absolute
+        left: -20px
+        top: 5px
+    button
+        background-color: transparent
+        padding: 0.375rem 0.75rem
+        border: 1px solid $white-muted
+        color: $white-muted
+
+.register-btn
+    position: absolute
+    top: 20px
+    right: 32px
+    background-color: $red
+    color: #fff
+    padding: 0.375rem 0.75rem
+    border-radius: 0.1875rem
+    font-size: 0.9375rem
+
+@media only screen and (max-width: 768px)
+    header
