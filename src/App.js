@@ -8,6 +8,7 @@ import Admin from './pages/Admin'
 import Pending from './pages/Pending'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Universe from './pages/Universe'
 import Updateemail from './pages/Updateemail'
 import Updatepwd from './pages/Updatepwd'
 import Updatexyz from './pages/Updatexyz'
@@ -29,11 +30,12 @@ const App = () => {
                     <PrivateRoute path='/admin' component={Admin} />
                     <Route path='/login' component={Login} />
                     <Route path='/signup' component={Signup} />
+                    <Route path='/universe' component={Universe} />
                     <Route path='/updatepassword' component={Updatepwd} />
                     <Route path='/updateemail' component={Updateemail} />
                     <Route path='/updatexyz' component={Updatexyz} />
                     <Route exact path='/' component={Login} />
-                    <Route  path='*' component={Login} />
+                    <Route path='*' component={Login} />
                 </Switch>
             </UserContext.Provider>
         </Router>

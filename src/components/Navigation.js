@@ -57,7 +57,9 @@ const Navigation = () => {
                     </li>
                     <li className="side-li"><span className="nav-icon"><Icon icon={imageFilterCenterFocus} /></span>Attacks</li>
                     <li className="side-li"><span className="nav-icon"><Icon icon={crosshairsGps} /></span>Scanning</li>
-                    <li className="side-li"><span className="nav-icon"><Icon icon={earthIcon} /></span>Universe</li>
+                    <li className="side-li"><span className="nav-icon"><Icon icon={earthIcon} /></span>
+                        <Link to='/universe' className="toAdmin">Universe</Link>
+                    </li>
                 </ul>
                 <p className="title">Command Team</p>
                 <ul className="side-ul">
@@ -71,7 +73,9 @@ const Navigation = () => {
             }
             {!user &&
             <ul className="side-ul">
-                <li className="side-li"><span className="nav-icon"><Icon icon={earthIcon} /></span>Universe</li>
+                <li className="side-li"><span className="nav-icon"><Icon icon={earthIcon} /></span>
+                    <Link to='/universe' className="toAdmin">Universe</Link>
+                </li>
             </ul>
             }
         </nav>

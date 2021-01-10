@@ -1,0 +1,100 @@
+@import '../sass/_vars'
+
+.universe
+    background-color: $black-1
+    min-height: 100vh
+    .page-content
+        width: -webkit-fill-available
+
+.tabs-section
+    background-color: $black-2
+    padding: 1.5rem
+    nav
+        display: flex
+        align-items: center
+        padding: 1rem 0
+        border-bottom: 1px solid $white-muted
+        .nav-item
+            margin-right: 1rem
+            cursor: pointer
+            padding: 2px
+            position: relative
+            color: $white-muted
+            white-space: nowrap
+            &:hover
+                color: #fff
+        .nav-current
+            margin-left: auto
+            margin-right: 0
+        .nav-input
+            input
+                border: 1px solid #2c2e33
+                font-weight: normal
+                padding: 0.5rem
+                background-color: #2A3038
+                border-radius: 2px
+                color: #ffffff
+                outline: none
+                &::placeholder
+                    color: $white-muted
+
+.dropdown-toggle
+    display: flex
+    align-items: center
+    background-color: transparent
+    padding: 0
+    border: none
+    color: $white-muted
+    white-space: nowrap
+    &:hover
+        color: #fff
+    svg
+        margin-left: 2px
+
+.dropdown-menu
+    top: 40% !important
+    display: flex
+    flex-direction: column
+    white-space: nowrap
+    background-color: $black-1
+    border: 1px solid #2c2e33
+    a
+        display: flex
+        align-items: center
+        color: #6c7293
+        padding: 11px 13px
+        border-bottom: 1px solid #2c2e33
+        font-size: 14px
+        &:hover
+            color: #fff
+
+.panel
+    color: $white-muted
+    margin-bottom: 1rem
+    padding: 1rem 0
+    h2
+        margin: 1rem 0
+        color: #fff
+    p
+        margin: 0.5rem 0
+
+footer
+    display: flex
+    border-top: 1px solid $white-muted
+    padding: 1rem 0 0 0
+    span
+        color: $white-muted
+        margin-left: 0.5rem
+
+.subpagelist
+    display: flex
+    align-items: center
+    margin-bottom: 1rem
+    p
+        color: #fff
+    div
+        margin-left: 1rem
+        color: $white-muted
+        cursor: pointer
+        &:hover
+            color: #fff
