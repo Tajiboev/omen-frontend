@@ -77,6 +77,19 @@
         color: #fff
     p
         margin: 0.5rem 0
+    table
+        text-align: center
+        caption
+            margin: 1rem 0
+            color: #fff
+    input
+        border: 1px solid #2c2e33
+        font-weight: normal
+        padding: 0.5rem
+        background-color: #2A3038
+        border-radius: 2px
+        color: #ffffff
+        outline: none
 
 footer
     display: flex
@@ -92,9 +105,25 @@ footer
     margin-bottom: 1rem
     p
         color: #fff
-    div
+    ul
+        display: flex
         margin-left: 1rem
+    li
+        list-style: disc
+        margin-left: 2rem
         color: $white-muted
         cursor: pointer
         &:hover
             color: #fff
+
+.positive
+    color: $green
+.negative
+    color: $red
+
+.planet
+    display: flex
+    ul
+        margin-left: 2rem
+        li
+            margin-bottom: 8px

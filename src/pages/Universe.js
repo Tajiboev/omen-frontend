@@ -7,7 +7,10 @@ import chevronDown from '@iconify-icons/mdi/chevron-down';
 
 import HomePane from '../components/universe/UniverseHome'
 import SettingsPane from '../components/universe/Settings'
-import  ViewAlliancesPane from '../components/universe/ViewAlliances'
+import  AllianceCurrent from '../components/universe/AllianceCurrent'
+import  Old from '../components/universe/Old'
+import  Planets from '../components/universe/Planets'
+import  Galaxies from '../components/universe/Galaxies'
 
 import Header from '../components/Header'
 import Navigation from '../components/Navigation'
@@ -37,8 +40,8 @@ const Dashboard = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1" onClick={() => setShowPanel('alliances')}>View alliances: Current</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">View alliances: Past rounds</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-1" onClick={() => setShowPanel('alliance-current')}>View alliances: Current</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-2" onClick={() => setShowPanel('old')}>View alliances: Past rounds</Dropdown.Item>
                                         <Dropdown.Item href="#/action-3">01 - 949.7M - Cluster 3</Dropdown.Item>
                                         <Dropdown.Item href="#/action-3">01 - 949.7M - Cluster 3</Dropdown.Item>
                                         <Dropdown.Item href="#/action-3">01 - 949.7M - Cluster 3</Dropdown.Item>
@@ -64,13 +67,13 @@ const Dashboard = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-3">List planets</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('planets')}>List planets</Dropdown.Item>
                                         <Dropdown.Item href="#/action-3">Top 100 (Known) Scanners</Dropdown.Item>
                                         <Dropdown.Item href="#/action-3">Top 100 (Known) Distwhores</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </div>
-                            <div className="nav-item nav-old">
+                            <div className="nav-item nav-old" onClick={() => setShowPanel('old')}>
                                 Old rounds
                             </div>
                             <div className="nav-item nav-settings" onClick={() => setShowPanel('settings')}>
@@ -87,9 +90,10 @@ const Dashboard = () => {
                             </div>
                         </nav>
                         {showPanel === 'home' && <HomePane></HomePane>}
-                        {showPanel === 'alliances' && <ViewAlliancesPane current={true}></ViewAlliancesPane>}
-                        {showPanel === 'galaxies' && <h2>Galaxies</h2>}
-                        {showPanel === 'planets' && <h2>Planets</h2>}
+                        {showPanel === 'alliance-current' && <AllianceCurrent></AllianceCurrent>}
+                        {showPanel === 'old' && <Old></Old>}
+                        {showPanel === 'galaxies' && <Galaxies></Galaxies>}
+                        {showPanel === 'planets' && <Planets></Planets>}
                         {showPanel === 'settings' && <SettingsPane></SettingsPane>}
                         <footer>
                             <p>Total Execution Time:</p> <span>35ms</span>
