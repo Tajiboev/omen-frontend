@@ -8,6 +8,10 @@ import chevronDown from '@iconify-icons/mdi/chevron-down';
 import HomePane from '../components/universe/UniverseHome'
 import SettingsPane from '../components/universe/Settings'
 import  AllianceCurrent from '../components/universe/AllianceCurrent'
+import  Allianceforts from '../components/universe/Allianceforts'
+import  Cluster from '../components/universe/Cluster'
+import  Distwhores from '../components/universe/Distwhores'
+import  Scanners from '../components/universe/Scanners'
 import  Old from '../components/universe/Old'
 import  Planets from '../components/universe/Planets'
 import  Galaxies from '../components/universe/Galaxies'
@@ -20,7 +24,7 @@ import '../sass/Universe.sass'
 
 import '../sass/Dashboard.sass'
 
-const Dashboard = () => {
+const Universe = () => {
     const [showPanel, setShowPanel] = useState('home')
     return (
         <main className="universe">
@@ -42,9 +46,9 @@ const Dashboard = () => {
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-1" onClick={() => setShowPanel('alliance-current')}>View alliances: Current</Dropdown.Item>
                                         <Dropdown.Item href="#/action-2" onClick={() => setShowPanel('old')}>View alliances: Past rounds</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">01 - 949.7M - Cluster 3</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">01 - 949.7M - Cluster 3</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">01 - 949.7M - Cluster 3</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('cluster')}>01 - 949.7M - Cluster 3</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('cluster')}>01 - 949.7M - Cluster 3</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('cluster')}>01 - 949.7M - Cluster 3</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </div>
@@ -56,7 +60,7 @@ const Dashboard = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('galaxies')}>View galaxies</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Alliance forts</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('allianceforts')}>Alliance forts</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </div>
@@ -68,8 +72,8 @@ const Dashboard = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('planets')}>List planets</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Top 100 (Known) Scanners</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Top 100 (Known) Distwhores</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('scanners')}>Top 100 (Known) Scanners</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-3" onClick={() => setShowPanel('distwhores')}>Top 100 (Known) Distwhores</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </div>
@@ -91,8 +95,12 @@ const Dashboard = () => {
                         </nav>
                         {showPanel === 'home' && <HomePane></HomePane>}
                         {showPanel === 'alliance-current' && <AllianceCurrent></AllianceCurrent>}
+                        {showPanel === 'cluster' && <Cluster></Cluster>}
                         {showPanel === 'old' && <Old></Old>}
                         {showPanel === 'galaxies' && <Galaxies></Galaxies>}
+                        {showPanel === 'distwhores' && <Distwhores></Distwhores>}
+                        {showPanel === 'scanners' && <Scanners></Scanners>}
+                        {showPanel === 'allianceforts' && <Allianceforts></Allianceforts>}
                         {showPanel === 'planets' && <Planets></Planets>}
                         {showPanel === 'settings' && <SettingsPane></SettingsPane>}
                         <footer>
@@ -105,4 +113,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default Universe

@@ -43,7 +43,67 @@ const UniverseHome = (props) => {
                     </tbody>
                 </table>
                 <p>(c200 not included)</p>
-            </section>     
+            </section>   
+            <br/>
+            <section>
+                <table>
+                    <thead>
+
+                        <th>Coords</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                        <th>Value</th>
+                        <th>Size</th>
+                        <th>XP</th>
+                        <th>Pla</th>
+                        <th>Ally</th>
+                        <th>IT</th>
+                        <th>ITXP</th>
+                        <th>Tar</th>
+                    </thead>						
+                    <tbody>
+                        <tr>
+                            <td>3:2</td>
+                            <td>Coup dtat</td>
+                            <td>512.7M</td>
+                            <td>506.8M</td>
+                            <td>154663</td>
+                            <td>98769</td>
+                            <td>11</td>
+                            <td>Cl3</td>
+                            <td>68.8</td>
+                            <td>388.0</td>
+                            <td>11</td>
+                        </tr>                                        
+                        <tr>
+                            <td>3:2</td>
+                            <td>Coup dtat</td>
+                            <td>512.7M</td>
+                            <td>506.8M</td>
+                            <td>154663</td>
+                            <td>98769</td>
+                            <td>11</td>
+                            <td>Cl3</td>
+                            <td>68.8</td>
+                            <td>388.0</td>
+                            <td>11</td>
+                        </tr>                                        
+                        <tr>
+                            <td>3:2</td>
+                            <td>Coup dtat</td>
+                            <td>512.7M</td>
+                            <td>506.8M</td>
+                            <td>154663</td>
+                            <td>98769</td>
+                            <td>11</td>
+                            <td>Cl3</td>
+                            <td>68.8</td>
+                            <td>388.0</td>
+                            <td>11</td>
+                        </tr>                                        
+                    </tbody>
+                </table>
+            </section>  
         </div>
     )
 }

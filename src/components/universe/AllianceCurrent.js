@@ -1,6 +1,6 @@
 import React from 'react'
 
-const UniverseHome = (props) => {
+const AllianceCurrent = (props) => {
 
     return (
         <div className='panel'>
@@ -78,4 +78,4 @@ const UniverseHome = (props) => {
     )
 }
 
-export default UniverseHome
+export default AllianceCurrent
