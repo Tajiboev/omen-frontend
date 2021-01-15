@@ -11,6 +11,8 @@ import calendarToday from '@iconify-icons/mdi/calendar-today';
 import securityIcon from '@iconify-icons/mdi/security';
 import contactsIcon from '@iconify-icons/mdi/contacts';
 import accountCog from '@iconify-icons/mdi/account-cog';
+import chartBar from '@iconify-icons/mdi/chart-bar';
+
 
 
 import { Icon } from '@iconify/react';
@@ -56,7 +58,9 @@ const Navigation = () => {
                         <Link to='/dashboard' className="toAdmin">Dashboard</Link>
                     </li>
                     <li className="side-li"><span className="nav-icon"><Icon icon={imageFilterCenterFocus} /></span>Attacks</li>
-                    <li className="side-li"><span className="nav-icon"><Icon icon={crosshairsGps} /></span>Scanning</li>
+                    <li className="side-li"><span className="nav-icon"><Icon icon={crosshairsGps} /></span>
+                        <Link to='/scanning' className="toAdmin">Scanning</Link>
+                    </li>
                     <li className="side-li"><span className="nav-icon"><Icon icon={earthIcon} /></span>
                         <Link to='/universe' className="toAdmin">Universe</Link>
                     </li>
@@ -68,6 +72,9 @@ const Navigation = () => {
                     {(user.permission === 'admin') &&<li className="side-li"><span className="nav-icon"><Icon icon={contactsIcon} /></span>
                         <Link to='/admin' className="toAdmin">Manage membership</Link>
                     </li>}
+                    <li className="side-li"><span className="nav-icon"><Icon icon={chartBar} /></span>
+                        <Link to='/gamestats' className="toAdmin">Game stats</Link>
+                    </li>
                 </ul>
             </div>
             }

@@ -1,0 +1,53 @@
+@import '_vars'
+
+.gamestats
+    background-color: $black-1
+    min-height: 100vh
+    .page-content
+        width: -webkit-fill-available
+
+.stats-url
+    background-color: $black-2
+    padding: 1rem
+    margin-bottom: 1rem
+    max-width: 100%
+    form
+        input
+            border: 1px solid #2c2e33
+            font-size: 0.875rem
+            padding: 0.75rem
+            background-color: #2A3038
+            border-radius: 2px
+            color: #ffffff
+            outline: none
+            margin-right: 1rem
+            min-width: 250px
+            &::placeholder
+                color: $white-muted
+        button
+            padding: 0.875rem 1.5rem
+            background-color: transparent
+            border: 1px solid #6c7293
+            color: #6c7293
+            &:hover
+                border: 1px solid #fff
+                color: #fff
+
+.stats-result
+    background-color: $black-2
+    padding: 1rem
+    .error
+        margin: 1rem 0
+    .source
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        p
+            margin-bottom: 1rem
+            color: $white-muted
+        .lead
+            color: #fff
+
+.stats-table
+    overflow-x: scroll
+    table
+        margin-bottom: 1rem

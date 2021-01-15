@@ -1,0 +1,55 @@
+@import '_vars'
+
+.scan
+    background-color: $black-1
+    min-height: 100vh
+    .page-content
+        width: -webkit-fill-available
+    .card-table
+        padding: 1rem
+        margin-bottom: 1rem
+        .control
+            margin: 0
+
+.scanner
+    display: grid
+    grid-template-columns: 1fr 2fr
+    .scan-url
+        background-color: $black-2
+        margin-right: 1rem
+        padding: 1rem
+        max-height: 150px
+        form
+            display: flex
+            flex-direction: column
+            justify-content: center
+            input
+                flex: 1
+                margin-bottom: 1rem
+                border: 1px solid #2c2e33
+                font-weight: normal
+                font-size: 0.875rem
+                padding: 0.875rem
+                background-color: #2A3038
+                border-radius: 2px
+                color: #ffffff
+                outline: none
+                &::placeholder
+                    color: $white-muted
+            button
+                border: 1px solid #6c7293
+                color: #6c7293
+                padding: 0.875rem 1.5rem
+                background-color: transparent
+                &:hover
+                    border: 1px solid #fff
+                    color: #fff
+
+.scan-result
+    background-color: $black-2
+    padding: 1rem
+    p
+        margin-bottom: 1rem
+    td
+        color: $white-muted
+        text-align: center
